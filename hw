@@ -1,0 +1,43 @@
+using System;
+
+namespace Testing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x,y,z,w,k;
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            z = int.Parse(Console.ReadLine());
+            w = int.Parse(Console.ReadLine());
+            k = 0;
+            if (x > 0)
+                k += 1;
+            if (y > 0)
+                k += 1;
+            if (z > 0)
+                k += 1;
+            if (w > 0)
+                k += 1;
+            if (k > 0)
+            {
+                Console.WriteLine("Yes");
+                Console.WriteLine(k);
+                if (k > 3)
+                    Console.WriteLine("All numbers are positive");
+
+
+            }
+            else
+                Console.WriteLine("No");
+            
+            
+
+
+
+
+            Console.WriteLine();
+        }
+    }
+}
